@@ -54,14 +54,14 @@ Then the the script will use "Connect-MgGraph -AccessToken $secureToken" to gain
 
 Example commands:
 
-Test-SiteAccess
-Performs both read and write access tests on the specified SharePoint site.
+- Test-SiteAccess
+  Performs both read and write access tests on the specified SharePoint site.
 
-Test-SiteAccess -TestType "Read"
-Performs only read access tests on the specified SharePoint site.
+- Test-SiteAccess -TestType "Read"
+  Performs only read access tests on the specified SharePoint site.
 
-Test-SiteAccess -TestType "Write"
-Performs only write access tests on the specified SharePoint site.
+- Test-SiteAccess -TestType "Write"
+  Performs only write access tests on the specified SharePoint site.
 
 
 Here is an example of the output:
