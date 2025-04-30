@@ -12,6 +12,7 @@ Example:
 
 
 **Grant-AppSitePermissions.ps1**
+
 This script uses Microsoft Graph PowerShell module. 
 Connects to Microsoft Graph API and grants specified permissions (read or write) to an Azure AD application for a particular SharePoint site. 
 It retrieves the SharePoint site ID based on the provided URL, checks existing permissions, grants the requested permissions, and verifies the assignment.
@@ -32,7 +33,8 @@ $approle = "write"  # Permission level: "write" grants read/write access, "read"
 
 
 
-****Test-SiteAccess.ps1********
+**Test-SiteAccess.ps1**
+
 This script authenticates to Microsoft Graph API using client credentials flow and tests both read and write access to a specified SharePoint site collection. 
 It performs read tests by retrieving site lists and document library items, and write tests by uploading and optionally deleting a temporary test file in the default document library.
 
