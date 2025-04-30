@@ -3,6 +3,14 @@ Scripts to Add and check Site Level permissions to an Entra App in SharePoint.
 
 This script is very useful when adding  permissions to SharePoint Sites when the App is configured with Sites.Selected.
 
+Example:
+
+![image](https://github.com/user-attachments/assets/eff92e25-8bf8-4098-8b3e-0e5eb7a29668)
+
+
+![image](https://github.com/user-attachments/assets/a9587c22-50ed-40e6-bd76-8c273747725a)
+
+
 **Grant-AppSitePermissions.ps1**
 This script uses Microsoft Graph PowerShell module. 
 Connects to Microsoft Graph API and grants specified permissions (read or write) to an Azure AD application for a particular SharePoint site. 
@@ -23,6 +31,8 @@ $siteUrl = "https://contoso.sharepoint.com/sites/it"  # The SharePoint site URL
 $approle = "write"  # Permission level: "write" grants read/write access, "read" grants read-only access
 
 
+
 **Test-SiteAccess.ps1**
 This script authenticates to Microsoft Graph API using client credentials flow and tests both read and write access to a specified SharePoint site collection. 
 It performs read tests by retrieving site lists and document library items, and write tests by uploading and optionally deleting a temporary test file in the default document library.
+
