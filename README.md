@@ -13,9 +13,13 @@ All you need is to specify these paramaters:
 Example:
 
 $tenantId = "9cfc42cb-51da-4055-87e9-b20a170b6ba3"  # The Azure AD tenant ID
+
 $Appid = 'b8c630cd-a668-4e6a-8574-1f3cbdb43c89'     # The Azure AD application (client) ID
+
 $AppDisplayName = "Sites.Selected - App"             # The display name of the application
+
 $siteUrl = "https://contoso.sharepoint.com/sites/it"  # The SharePoint site URL
+
 $approle = "write"  # Permission level: "write" grants read/write access, "read" grants read-only access
 
 
