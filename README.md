@@ -32,7 +32,22 @@ $approle = "write"  # Permission level: "write" grants read/write access, "read"
 
 
 
-**Test-SiteAccess.ps1**
+****Test-SiteAccess.ps1********
 This script authenticates to Microsoft Graph API using client credentials flow and tests both read and write access to a specified SharePoint site collection. 
 It performs read tests by retrieving site lists and document library items, and write tests by uploading and optionally deleting a temporary test file in the default document library.
+
+You will need your app information to create your access token to perform the test.
+
+Example:
+$tenantId = "9cfc42cb-51da-4055-87e9-b20a170b6ba3"     # Your Azure AD tenant ID
+$ClientId = 'b8c630cd-a668-4e6a-8574-1f3cbdb43c89'      # App registration client ID
+$clientSecret = '' # App client secret
+$siteUrl = "https://m365cpi13246019.sharepoint.com/sites/it" # Target SharePoint site URL
+
+Then the the script will use "Connect-MgGraph -AccessToken $secureToken" to gain access to the site collection.
+
+Here is an example of the output:
+
+![image](https://github.com/user-attachments/assets/55513015-77a6-491f-a14f-c64bf18c371a)
+
 
