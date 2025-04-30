@@ -3,7 +3,8 @@
 Grants an Azure AD application specific permissions (read or write) to a SharePoint site using Microsoft Graph API.
 
 .DESCRIPTION
-This script connects to Microsoft Graph API and grants specified permissions (read or write) to an Azure AD application for a particular SharePoint site. It retrieves the SharePoint site ID based on the provided URL, checks existing permissions, grants the requested permissions, and verifies the assignment.
+This script connects to Microsoft Graph API and grants specified permissions (read or write) to an Azure AD application for a particular SharePoint site. 
+It retrieves the SharePoint site ID based on the provided URL, checks existing permissions, grants the requested permissions, and verifies the assignment.
 
 .PARAMETER tenantId
 The Azure AD tenant ID where the SharePoint site and application reside.
