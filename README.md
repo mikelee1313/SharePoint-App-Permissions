@@ -41,9 +41,13 @@ It performs read tests by retrieving site lists and document library items, and 
 You will need your app information to create your access token to perform the test.
 
 Example:
+
 $tenantId = "9cfc42cb-51da-4055-87e9-b20a170b6ba3"     # Your Azure AD tenant ID
+
 $ClientId = 'b8c630cd-a668-4e6a-8574-1f3cbdb43c89'      # App registration client ID
+
 $clientSecret = '' # App client secret
+
 $siteUrl = "https://m365cpi13246019.sharepoint.com/sites/it" # Target SharePoint site URL
 
 Then the the script will use "Connect-MgGraph -AccessToken $secureToken" to gain access to the site collection.
