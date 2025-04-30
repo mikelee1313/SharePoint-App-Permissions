@@ -1,7 +1,8 @@
 # SharePoint-App-Permissions
-Scripts to Add and check Site Level permissions to an Entra App in SharePoint. 
 
-This script is very useful when adding  permissions to SharePoint Sites when the App is configured with Sites.Selected.
+Scripts to Add and check Site Level permissions from an Entra App in SharePoint using Graph PowerShell.
+
+These scripts are very useful when adding permissions to SharePoint Sites when the App is configured with Sites.Selected.
 
 Example:
 
