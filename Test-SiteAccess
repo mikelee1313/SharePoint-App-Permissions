@@ -3,7 +3,8 @@
     Tests read and write access to a SharePoint site collection using Microsoft Graph API.
 
 .DESCRIPTION
-    This script authenticates to Microsoft Graph API using client credentials flow and tests both read and write access to a specified SharePoint site collection. It performs read tests by retrieving site lists and document library items, and write tests by uploading and optionally deleting a temporary test file in the default document library.
+This script authenticates to Microsoft Graph API using client credentials flow and tests both read and write access to a specified SharePoint site collection. 
+It performs read tests by retrieving site lists and document library items, and write tests by uploading and optionally deleting a temporary test file in the default document library.
 
 .PARAMETER TestType
     Specifies the type of access test to perform. Valid values are:
