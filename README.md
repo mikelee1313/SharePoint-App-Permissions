@@ -52,6 +52,18 @@ $siteUrl = "https://m365cpi13246019.sharepoint.com/sites/it" # Target SharePoint
 
 Then the the script will use "Connect-MgGraph -AccessToken $secureToken" to gain access to the site collection.
 
+Example commands:
+
+Test-SiteAccess
+Performs both read and write access tests on the specified SharePoint site.
+
+Test-SiteAccess -TestType "Read"
+Performs only read access tests on the specified SharePoint site.
+
+Test-SiteAccess -TestType "Write"
+Performs only write access tests on the specified SharePoint site.
+
+
 Here is an example of the output:
 
 ![image](https://github.com/user-attachments/assets/55513015-77a6-491f-a14f-c64bf18c371a)
