@@ -58,7 +58,7 @@ $approle = "write"  # Permission level: "write" grants read/write access, "read"
 # Directory.ReadWrite.All - For accessing directory objects
 # AppRoleAssignment.ReadWrite.All - For managing application permissions
 # Sites.FullControl.All - For managing SharePoint site permissions
-Connect-MgGraph -TenantId $tenantId -Scopes "Directory.ReadWrite.All", "AppRoleAssignment.ReadWrite.All", "Sites.FullControl.All" -NoWelcome
+Connect-MgGraph -TenantId $tenantId -Scopes "Sites.FullControl.All" -NoWelcome
 
 # Retrieve the SharePoint site ID based on the URL
 # This section uses the hostname and site path approach to get the site ID
