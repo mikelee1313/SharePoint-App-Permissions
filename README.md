@@ -32,6 +32,10 @@ $siteUrl = "https://contoso.sharepoint.com/sites/it"  # The SharePoint site URL
 
 $approle = "write"  # Permission level: "write" grants read/write access, "read" grants read-only access
 
+Example Output:
+
+![image](https://github.com/user-attachments/assets/16f0d01f-23c4-4762-9789-764fdd6663b5)
+
 
 
 **Test-SiteAccess.ps1**
