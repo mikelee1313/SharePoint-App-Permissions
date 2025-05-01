@@ -12,6 +12,7 @@ Example:
 ![image](https://github.com/user-attachments/assets/a9587c22-50ed-40e6-bd76-8c273747725a)
 
 
+
 **Grant-AppSitePermissions.ps1**
 
 This script uses Microsoft Graph PowerShell module. 
@@ -35,6 +36,7 @@ $approle = "write"  # Permission level: "write" grants read/write access, "read"
 Example Output:
 
 ![image](https://github.com/user-attachments/assets/16f0d01f-23c4-4762-9789-764fdd6663b5)
+
 
 
 
