@@ -26,7 +26,7 @@ It retrieves the SharePoint site ID based on the provided URL, checks existing p
 - Requires Microsoft Graph PowerShell module.
 - Requires appropriate administrative permissions to grant application permissions to SharePoint sites.
 - Ensure the application ID and tenant ID are correct and that the application is registered in Azure AD.
-- 
+  
 
 
 All you need is to specify these parameters:
