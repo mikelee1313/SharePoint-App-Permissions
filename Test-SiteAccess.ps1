@@ -33,7 +33,6 @@ Authors: Mike Lee
 - Appropriate permissions configured in Azure AD.
 - Ensure the provided client credentials have sufficient permissions to perform the intended operations.
 - Requires PowerShell 7.X
-- Tested with PNP 2.12.0 
 
 
 Disclaimer: The sample scripts are provided AS IS without warranty of any kind. 
