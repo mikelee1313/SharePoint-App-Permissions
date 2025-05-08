@@ -29,7 +29,8 @@ It performs read tests by retrieving site lists and document library items, and 
 Authors: Mike Lee
  Date: 4/30/2025
 
-- Requires Microsoft Graph PowerShell SDK (Connect-MgGraph) and appropriate permissions configured in Azure AD.
+- Requires Microsoft Graph PowerShell SDK (Connect-MgGraph)
+- Appropriate permissions configured in Azure AD.
 - Ensure the provided client credentials have sufficient permissions to perform the intended operations.
 - Requires PowerShell 7.X
 - Tested with PNP 2.12.0 
