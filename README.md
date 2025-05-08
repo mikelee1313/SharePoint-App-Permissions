@@ -19,7 +19,17 @@ This script uses Microsoft Graph PowerShell module.
 Connects to Microsoft Graph API and grants specified permissions (read or write) to an Azure AD application for a particular SharePoint site. 
 It retrieves the SharePoint site ID based on the provided URL, checks existing permissions, grants the requested permissions, and verifies the assignment.
 
-All you need is to specify these paramaters:
+**Requirements:**
+
+- Requires PowerShell 7.X
+- Tested with PNP 2.12.0  
+- Requires Microsoft Graph PowerShell module.
+- Requires appropriate administrative permissions to grant application permissions to SharePoint sites.
+- Ensure the application ID and tenant ID are correct and that the application is registered in Azure AD.
+- 
+
+
+All you need is to specify these parameters:
 
 Example:
 
