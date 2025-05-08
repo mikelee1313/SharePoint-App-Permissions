@@ -29,7 +29,8 @@ It retrieves the SharePoint site ID based on the provided URL, checks existing p
   
 
 
-All you need is to specify these parameters:
+
+Specify these parameters:
 
 Example:
 
