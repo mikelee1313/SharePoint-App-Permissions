@@ -183,7 +183,7 @@ if ($siteId) {
         }
         # Final status message
         Write-Host "`n--- Script completed!! ---"
-        Write-Host "Please consider running the (Test-SiteAccess.ps1) from the same GitHub repository further test access." -ForegroundColor Green
+        Write-Host "Please consider running the (Test-GraphSiteAccesswithClientSecret.ps1) from the same GitHub repository further test access." -ForegroundColor Green
     }
     catch {
         # Handle errors during the permission granting process
