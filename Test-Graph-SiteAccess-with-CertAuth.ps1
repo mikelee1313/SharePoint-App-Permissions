@@ -56,8 +56,8 @@ $ClientId = '5baa1427-1e90-4501-831d-a8e67465f0d9'  # Your app registration clie
 $siteUrl = "https://m365x61250205.sharepoint.com/sites/commsite1"  # The SharePoint site URL to test
 
 # Certificate configuration
-$pfxPath = "C:\Users\michlee\OneDrive - Microsoft\SfMC_Docs\EEEU\08391064707223D84E33F271936DE80E92ED4F9C.pfx"  # Path to your PFX certificate file
-$pfxPassword = "pass"  # Password for the PFX file
+$pfxPath = "C:\temp\08391064707223D84E33F271936DE80E92ED4F9C.pfx"  # Path to your PFX certificate file
+$pfxPassword = ""  # Password for the PFX file
 
 # Optional configuration
 $testType = "Both"  # Valid values: "Read", "Write", "Both"
