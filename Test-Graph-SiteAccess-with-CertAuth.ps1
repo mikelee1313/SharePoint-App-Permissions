@@ -42,8 +42,6 @@ Date:          : 5/25/25
  Prerequisite   : PowerShell 5.1 or later
                      Valid Azure AD app registration with certificate authentication
                      PFX certificate file
-
-Author: Microsoft SharePoint Customer Engineering Team
 #>
 
 #######################################################
