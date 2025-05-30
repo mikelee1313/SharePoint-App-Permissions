@@ -5,7 +5,7 @@
 .DESCRIPTION
     This script demonstrates how to authenticate with Azure AD using certificate-based authentication and perform
     operations against the SharePoint REST API. It creates a client assertion JWT token, acquires access tokens
-    for both Microsoft Graph and SharePoint, and then performs read and write operations against a SharePoint site.
+    for SharePoint, and then performs read and write operations against a SharePoint site.
 
 .PARAMETER None
     This script does not accept parameters from the command line. Configure the script variables in the USER
@@ -109,21 +109,7 @@ $signature = $signatureFormatter.CreateSignature($hash)
 $signatureEncoded = [Convert]::ToBase64String($signature).TrimEnd('=').Replace('+', '-').Replace('/', '_')
 $clientAssertion = "$unsignedJwt.$signatureEncoded"
 
-# Prepare token request body
-$body = @{
-    grant_type            = "client_credentials"
-    client_id             = $clientId
-    client_assertion_type = "urn:ietf:params:oauth:client-assertion-type:jwt-bearer"
-    client_assertion      = $clientAssertion
-    scope                 = "https://graph.microsoft.com/.default"  # Standard scope for Microsoft Graph
-}
-
-# Request token from modern v2.0 endpoint
-$response = Invoke-RestMethod -Method Post -Uri "https://login.microsoftonline.com/$tenantId/oauth2/v2.0/token" -Body $body -ContentType "application/x-www-form-urlencoded"
-$graphToken = $response.access_token
-
-# We can use the same client assertion as for Graph
-# Get SharePoint token using v2.0 endpoint - just change the scope/audience
+# Get SharePoint token using v2.0 endpoint 
 $spBody = @{
     grant_type            = "client_credentials"
     client_id             = $clientId  # No tenant suffix needed for v2.0 endpoint
